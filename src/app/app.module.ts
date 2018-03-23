@@ -12,6 +12,7 @@ import '../web-components/mighty-toaster';
   imports: [
     BrowserModule
   ],
+  entryComponents: [],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [

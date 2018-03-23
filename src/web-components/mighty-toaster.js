@@ -10,17 +10,16 @@ export class MightyToaster extends HTMLElement {
                #mighty-toast {
                 visibility: hidden; 
                 min-width: 250px; 
-                margin-left: -125px; 
                 border-radius: 3px;
                 background-color: #FF00FF; 
-                font-family: 'Helvetica Neue';
-                color: #fff; 
+                font-family: 'Bowlby One', cursive;
+                font-weight: 300;
                 text-align: center; 
                 padding: 16px;
                 position: fixed;
                 z-index: 1;
                 left: 50%;
-                top: 30px;
+                top: 5rem;
                 }
                #mighty-toast.show {
                 visibility: visible;
@@ -66,6 +65,15 @@ export class MightyToaster extends HTMLElement {
   set text(value) {
     this.toast.innerHTML = value;
     this.setAttribute('text', value);
+  }
+
+  get color() {
+    return this.getAttribute('color');
+  }
+
+  set color(value) {
+    this.toast.style.backgroundColor = value;
+    this.setAttribute('color', value);
   }
 
   }

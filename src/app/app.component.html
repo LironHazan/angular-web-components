@@ -1,3 +1,10 @@
-<h1>toasting</h1>
+<div class="toasing"> <h1>toasting</h1>
+  <div> You're now watching </div>
+  <div> a web component toast notification </div>
+  <div> treated as a first class citizen in Angular  </div>
+</div>
 <mighty-toast [text]="greet"></mighty-toast>
+<mighty-toast *ngIf="showAlert" [text]="alert" [color]="bgColor"></mighty-toast>
+<mighty-toast *ngIf="oK" [text]="cool" [color]="coolBgColor"></mighty-toast>
+
 
