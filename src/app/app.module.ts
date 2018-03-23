@@ -3,8 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import '../web-components/Tabs';
-import '../web-components/Tab';
+import '../web-components/mighty-toaster';
 
 @NgModule({
   declarations: [
